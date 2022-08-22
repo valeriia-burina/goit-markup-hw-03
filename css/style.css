@@ -41,7 +41,7 @@ button,
 }
 
 .container {
-    width: 1600px;
+    width: 1944px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 215px;
@@ -53,15 +53,22 @@ button,
     padding-bottom: 94px;
 }
 
-.header-container {
+.header-container,
+.nav-container,
+.contact-container,
+.filters-container {
     display: flex;
     align-items: center;
 }
 
-.nav-container,
-.contact-container {
+.worklist-container {
     display: flex;
-    align-items: center;
+    flex-flow: wrap;
+    align-content: space-between;
+}
+
+.works-box {
+    margin-right: 30px;
 }
 
 .nav-item:not(:last-child),
@@ -78,6 +85,8 @@ button,
 .our-team-container {
     display: flex;
     align-items: center;
+    margin-right: 30px;
+
 }
 
 .logo {
