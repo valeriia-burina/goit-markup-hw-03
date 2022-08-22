@@ -26,7 +26,7 @@ img {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     /* identical to box height */
     letter-spacing: 0.03em;
 
@@ -63,11 +63,13 @@ img {
 .order {
     background-color: #2F303A;
     color: #FFFFFF;
+}
 
+.order-text {
     font-family: var(--primary-font);
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.37;
     /* or 136% */
     text-align: center;
     letter-spacing: 0.06em;
@@ -81,7 +83,7 @@ img {
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     /* identical to box height, or 188% */
     text-align: center;
     letter-spacing: 0.06em;
@@ -94,7 +96,7 @@ img {
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -105,7 +107,7 @@ img {
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
 
@@ -120,7 +122,7 @@ img {
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -131,7 +133,7 @@ img {
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
@@ -143,7 +145,7 @@ img {
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
@@ -166,7 +168,7 @@ footer, address {
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
 
@@ -177,11 +179,16 @@ footer, address {
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+}
+
+.address-mail-tel:hover, .address-street:hover,
+.address-mail-tel:focus, .address-street:focus {
+    color: var(--accent-color);
 }
 
 /* index.html footer css end, start of the portfolio.html body css */
@@ -190,7 +197,7 @@ footer, address {
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     /* identical to box height, or 162% */
     text-align: center;
     letter-spacing: 0.03em;
@@ -208,7 +215,7 @@ footer, address {
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     /* identical to box height, or 200% */
     letter-spacing: 0.06em;
 
@@ -219,7 +226,7 @@ footer, address {
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     /* identical to box height, or 188% */
     letter-spacing: 0.03em;
 
