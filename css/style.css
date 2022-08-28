@@ -40,53 +40,24 @@ button,
     cursor: pointer;
 }
 
-.container {
-    width: 1944px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 215px;
-    padding-right: 215px;
+.container{
+        width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
 }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+/* ###====== components ======### */
+
+/* ========= header ========= */
+
+.page-header-container{
+    display: flex; 
 }
 
-.header-container,
-.nav-container,
-.contact-container,
-.filters-container {
-    display: flex;
-    align-items: center;
-}
-
-.worklist-container {
-    display: flex;
-    flex-flow: wrap;
-    align-content: space-between;
-}
-
-.works-box {
-    margin-right: 30px;
-}
-
-.nav-item:not(:last-child),
-.contact-item {
-    margin-right: 50px;
-}
-
-.page-nav {
-    margin-right: 344px;
-}
-
-.features-container,
-.what-we-do-container,
-.our-team-container {
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-
+.page-header {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -98,7 +69,12 @@ button,
     letter-spacing: 0.03em;
 
     color: var(--accent-color);
+}
 
+.logohead {
+    display: inline-block;
+    padding-bottom: 32px;
+    padding-top: 24px;
     margin-right: 93px;
 }
 
@@ -106,13 +82,29 @@ button,
     color: #000000;
 }
 
+/* ========= nav ========= */
+
+.nav-list, .contact-list {
+    display: flex;
+    column-gap: 50px;
+}
+
+.contact-list {
+    margin-left: auto;
+}
+
 .nav-link,
 .contact-link {
     font-family: var(--primary-font);
     font-size: 14px;
     font-weight: 500;
-    line-height: 1, 14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
+
+    display: inline-block;
+    padding-bottom: 32px;
+    padding-top: 32px;
+
 }
 
 .nav-link {
@@ -130,25 +122,34 @@ button,
     color: var(--accent-color);
 }
 
-/* header css end, start of the body css */
+/* ========= body index ========= */
+
+/* ========= шапка к кнопкою замовити ========= */
+
 
 .order {
+    padding-top: 200px;
+    text-align: center;
+    
     background-color: #2F303A;
     color: #FFFFFF;
 }
 
-.order-text {
+.order-text {   
+
     font-family: var(--primary-font);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.37;
-    /* or 136% */
-    text-align: center;
+
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 .order-button {
+    margin-top: 30px;
+    margin-bottom: 200px;
+
     background-color: var(--accent-color);
     color: #FFFFFF;
 
@@ -163,6 +164,22 @@ button,
 
 .order-button:hover {
     background-color: #188CE8;
+}
+
+/* ========= блок особливостi ========= */
+
+.features-box {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.features-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.features-list-width {
+    width: 270px;
 }
 
 .features {
@@ -187,11 +204,29 @@ button,
     color: var(--background-color);
 }
 
+/* ========= чим займаємося ========= */
+
+.photo-wraper {
+    margin-bottom: 94px;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+/* ========= команда ========= */
+
 .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: #F5F4FA;
 }
 
-.h2text {
+.team-text,
+.whatwedo-text {
+    margin-bottom: 50px;
+
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 36px;
@@ -226,7 +261,11 @@ button,
     color: var(--background-color);
 }
 
-/* body css end, start of the footer css */
+/* ========= footer ========= */
+
+footer{
+    padding-bottom: 60px;
+}
 
 footer,
 address {
@@ -234,16 +273,31 @@ address {
     font-style: normal;
 }
 
+.address-mail-tel,
+.address-street{
+    display: inline-block;
+    padding-bottom: 9px;
+}
+
+/* ========= footer logo ========= */
+
+.footerlogo{
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-top: 60px;
+}
+
 .footer-logo-span {
     color: #FFFFFF;
 }
+
+/* ========= footer links ========= */
 
 .address-street {
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    /* or 171% */
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
@@ -254,7 +308,6 @@ address {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    /* or 171% */
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
@@ -267,7 +320,19 @@ address {
     color: var(--accent-color);
 }
 
-/* index.html footer css end, start of the portfolio.html body css */
+/* ##======= portfolio =======## */
+
+.filters-works-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.filters-list {
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 
 .filters-button {
     font-family: var(--primary-font);
