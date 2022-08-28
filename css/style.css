@@ -129,6 +129,7 @@ button,
 
 .order {
     padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     
     background-color: #2F303A;
@@ -148,18 +149,23 @@ button,
 
 .order-button {
     margin-top: 30px;
-    margin-bottom: 200px;
+
+    padding: 10px 32px 10px 32px;
 
     background-color: var(--accent-color);
     color: #FFFFFF;
 
     font-family: var(--primary-font);
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    /* identical to box height, or 188% */
     text-align: center;
     letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.15);
 }
 
 .order-button:hover {
@@ -183,6 +189,9 @@ button,
 }
 
 .features {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 14px;
@@ -206,9 +215,11 @@ button,
 
 /* ========= чим займаємося ========= */
 
-.photo-wraper {
-    margin-bottom: 94px;
+.photo-wraper-box {
+    padding-bottom: 94px;
+}
 
+.photo-wraper{
     display: flex;
     justify-content: center;
     column-gap: 30px;
@@ -221,6 +232,19 @@ button,
     padding-bottom: 94px;
 
     background-color: #F5F4FA;
+}
+
+.flex-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.flex-list li{
+    background-color: #FFFFFF;
+    padding-bottom: 30px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-text,
@@ -320,7 +344,9 @@ address {
     color: var(--accent-color);
 }
 
-/* ##======= portfolio =======## */
+/* ##======= portfolio.html =======## */
+
+/* ======= filters button ======= */
 
 .filters-works-container {
     padding-top: 94px;
@@ -335,16 +361,21 @@ address {
 }
 
 .filters-button {
+    padding: 6px 25px 6px 25px;
+
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    /* identical to box height, or 162% */
+
     text-align: center;
     letter-spacing: 0.03em;
 
     color: #212121;
     background-color: #F5F4FA;
+
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
 }
 
 .filters-button:hover,
@@ -353,23 +384,33 @@ address {
     background-color: var(--accent-color);
 }
 
+/* ======= portfolio work ======= */
+
+.portfolio-list {
+    flex-wrap: wrap;
+}
+
+.portfolio-list li {
+    margin-bottom: 30px;
+}
+
 .portfolio-works {
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    /* identical to box height, or 200% */
+    text-align: center;
     letter-spacing: 0.06em;
 
     color: #212121;
 }
 
-.portfolio-works-filter {
+.portfolio-works-type {
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-    /* identical to box height, or 188% */
+    text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--background-color);
