@@ -126,8 +126,12 @@ button,
 
 /* ========= шапка к кнопкою замовити ========= */
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
-.order {
+.section-order {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -175,8 +179,7 @@ button,
 /* ========= блок особливостi ========= */
 
 .features-box {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0;
 }
 
 .features-list {
@@ -228,9 +231,6 @@ button,
 /* ========= команда ========= */
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
     background-color: #F5F4FA;
 }
 
@@ -347,11 +347,6 @@ address {
 /* ##======= portfolio.html =======## */
 
 /* ======= filters button ======= */
-
-.filters-works-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .filters-list {
     display: flex;
