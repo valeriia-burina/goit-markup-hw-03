@@ -55,7 +55,8 @@ button,
 
 /* ========= header ========= */
 
-.page-header-container{
+.page-header-container,
+.page-nav {
     display: flex; 
 }
 
@@ -313,12 +314,8 @@ address {
     display: inline-block;
 }
 
-.footer-list  li  {
+.footer-list li:nth-child(-n+2)  {
     margin-bottom: 9px; 
-}
-
-.footer-list li :last-child {
-    margin-bottom: 0;
 }
 
 /* ========= footer logo ========= */
